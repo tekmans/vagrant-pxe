@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
   config.vm.define :server do |server|
 
     # Use debian 10 for server
-    server.vm.box = "generic/debian10"
+    server.vm.box = "generic/debian9"
     server.vm.hostname = "pxe-server"
     # Create a private network without vagrant DHCP
     server.vm.network "private_network",
